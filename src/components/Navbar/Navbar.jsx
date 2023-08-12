@@ -28,7 +28,7 @@ const Navbar = () => {
           </Link>
         </form>
       </nav>
-      <h2 className="text-info text-center mt-2">
+      <h2 className="text-primary text-center mt-2">
         Good &nbsp;
         {hour <= 12
           ? "Morning"
