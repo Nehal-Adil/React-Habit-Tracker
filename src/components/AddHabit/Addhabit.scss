@@ -1,0 +1,25 @@
+// container Scss
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // Card Styling
+  .card1 {
+    background-color: rgb(211 222 255) !important;
+    width: 45%;
+    height: 70%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 3px 8px 3px,
+      rgba(0, 0, 0, 0.3) 0px 6px 4px -3px, rgba(0, 0, 0, 0.2) 0px -4px 2px inset;
+    // button styling
+    .mybtn {
+      margin-left: 260px !important;
+    }
+
+    h1 {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+  }
+}
