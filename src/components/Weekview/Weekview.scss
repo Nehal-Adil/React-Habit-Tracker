@@ -1,0 +1,39 @@
+.week {
+  h1 {
+    width: auto;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    border-radius: 10px;
+  }
+
+  .btn1 {
+    display: flex;
+    padding: 5px 30px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: rgb(218, 0, 29);
+    border: none;
+
+    &:hover {
+      background-color: rgb(146, 0, 20);
+    }
+
+    .link {
+      font-size: 20px;
+      text-decoration: none;
+      color: rgb(249, 246, 246);
+      font-weight: 600;
+    }
+  }
+}
+.days-container {
+  width: 90%;
+  margin: 20px 65px;
+  display: flex;
+  justify-content: space-between;
+}
