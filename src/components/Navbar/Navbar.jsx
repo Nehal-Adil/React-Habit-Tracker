@@ -13,9 +13,9 @@ const Navbar = () => {
     <div className="Navbar mb-4 ">
       <nav
         className="navbar  navbar-dark justify-content-between "
-        style={{ backgroundColor: "#212529" }}
+        style={{ backgroundColor: "#ff7239" }}
       >
-        <Link to="/" className="navbar-brand m-2 ms-5">
+        <Link to="/" className="navbar-brand ms-3">
           <h1 className="text-light text-center">HABIT TRACKER</h1>
         </Link>
         <form action="" className="form-inline">
