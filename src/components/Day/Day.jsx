@@ -1,6 +1,5 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { toast } from "react-toastify";
 import {
   habitDone,
   habitNone,
@@ -29,16 +28,7 @@ const Day = ({ day }) => {
 
   const notDone = () => {
     if (day.id > todayDay) {
-      toast.warn("You cannot change your next days status", {
-        position: "top-right",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "colored",
-      });
+      alert("You cannot change your next days status");
       return;
     }
 
