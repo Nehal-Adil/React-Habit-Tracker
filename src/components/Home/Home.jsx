@@ -3,7 +3,6 @@ import "./Home.scss";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { deleteHabit } from "../../redux/reducer/HabitReducer";
-import { toast } from "react-toastify";
 
 const Home = ({ habit }) => {
   const today = new Date();
@@ -25,14 +24,7 @@ const Home = ({ habit }) => {
   //Delete function
   const handleDelete = () => {
     dispatch(deleteHabit(habit.id));
-    toast.error("Habit deleted successfully", {
-      position: "top-right",
-      autoClose: 800,
-      hideProgressBar: false,
-      closeOnClick: true,
-      progress: undefined,
-      theme: "colored",
-    });
+    alert("Habit deleted successfully");
   };
 
   // set id to navigate to the week-view page

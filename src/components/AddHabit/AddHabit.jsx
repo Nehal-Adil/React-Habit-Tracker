@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { toast } from "react-toastify";
 import "./Addhabit.scss";
 import { useDispatch } from "react-redux";
 import { addHabit } from "../../redux/reducer/HabitReducer";
@@ -14,16 +13,7 @@ const AddHabit = () => {
     dispatch(addHabit(habitName));
 
     //Display Notification
-    toast.success("Habit added successfully", {
-      position: "top-right",
-      autoClose: 800,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "colored",
-    });
+    alert("Habbit added Successfully");
     document.getElementById("habitName").value = "";
   };
 
