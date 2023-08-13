@@ -19,17 +19,7 @@ const Day = ({ day }) => {
 
   const done = () => {
     if (day.id > todayDay) {
-      // react toast for notification
-      toast.warn("You cannot change your next days status", {
-        position: "top-right",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "colored",
-      });
+      alert("You cannot change your next days status");
       return;
     }
 
@@ -57,16 +47,7 @@ const Day = ({ day }) => {
   };
   const none = () => {
     if (day.id > todayDay) {
-      toast.warn("You cannot change your next days status", {
-        position: "top-right",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "colored",
-      });
+      alert("You cannot change your next days status");
       return;
     }
     // calling habitNone from reducer
