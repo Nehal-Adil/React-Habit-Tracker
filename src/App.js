@@ -4,7 +4,6 @@ import AddHabit from "./components/AddHabit/AddHabit";
 import Weekview from "./components/Weekview/Weekview";
 import { useSelector } from "react-redux";
 import List from "./components/List/List";
-import { ToastContainer } from "react-toastify";
 
 // our main app component
 function App() {
@@ -12,19 +11,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {/* ToastContainer settings */}
-        <ToastContainer
-          position="top-right"
-          autoClose={800}
-          hideProgressBar
-          newestOnTop
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="colored"
-        />
         <Navbar />
         {/* here are some of our various routes */}
         <Routes>
